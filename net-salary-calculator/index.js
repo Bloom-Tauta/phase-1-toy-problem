@@ -1,9 +1,9 @@
 const prompt =require("prompt-sync")()
 let basicSalary=prompt("Input user's salary")
-
+salary= (0<=100000)
 // calculate  nhif by subtracting nhif from salary
 function nhif() {
-    if (salary <= 5999){
+    if (salary >= 0 && salary <= 5999){
         console.log(salary - 150);
     }
     else if (salary >= 6000 && salary <= 7999) {
@@ -78,6 +78,4 @@ function paye() {
 }
 paye();
 
-let deduction=(nhif+nssf+paye)
-deduction();
 basicSalary =(salary-nhif-nssf-paye)
